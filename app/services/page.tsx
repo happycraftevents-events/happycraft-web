@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Services - HappyCraft Events",
     description:
       "We craft experiences that exceed expectations—blending creativity, precision, and seamless execution. From grand gatherings to intimate moments, every event is designed to captivate, connect, and leave a lasting impression.",
-    images: ["/og-graph/services.jpg"],
+    images: ["https://happycraftevents.com/og-graph/services.jpg"],
   },
 };
 

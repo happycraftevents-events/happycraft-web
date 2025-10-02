@@ -55,7 +55,7 @@ export const metadata: Metadata = {
       "Begin an extraordinary journey with HappyCraft Events. Design, delight, and inspire with India's premier corporate event management company.",
     images: [
       {
-        url: "/professional-corporate-event-conference.jpg",
+        url: "https://happycraftevents.com/og-graph/home.jpg",
         width: 1200,
         height: 630,
         alt: "HappyCraft Events - Professional Event Management",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title: "HappyCraft Events - Top Event Management Company in India",
     description:
       "Begin an extraordinary journey with HappyCraft Events. Design, delight, and inspire with India's premier corporate event management company.",
-    images: ["/professional-corporate-event-conference.jpg"],
+    images: ["https://happycraftevents.com/og-graph/home.jpg"],
     creator: "@happycraftevents",
   },
   alternates: {

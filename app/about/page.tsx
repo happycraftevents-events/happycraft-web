@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Us - HappyCraft Events",
     description: "HappyCraft Events has been at the forefront of event management in India, transforming visions into unforgettable experiences with creativity, precision, and passion.",
-    images: ["/og-graph/about.jpg"],
+    images: ["https://happycraftevents.com/og-graph/about.jpg"],
   },
 }
 
