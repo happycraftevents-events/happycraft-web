@@ -1,0 +1,497 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Core Colors */
+  --background: #F2F2F2; /* Very light gray background to make teal pop */
+  --foreground: #1A1A1A; /* Dark text for contrast */
+
+  /* Cards & Surfaces */
+  --card: #FFFFFF; /* White cards */
+  --card-foreground: #1A1A1A;
+
+  --popover: #FFFFFF; /* White popovers */
+  --popover-foreground: #1A1A1A;
+
+  /* Primary */
+  --primary: #14B8A6; /* Teal */
+  --primary-foreground: #FFFFFF; /* White text on teal */
+
+  /* Secondary */
+  --secondary: #CBCBCB; /* Soft gray for secondary elements */
+  --secondary-foreground: #242020;
+
+  /* Muted */
+  --muted: #F9FAFB; /* Light muted background */
+  --muted-foreground: #252527; /* Medium gray text */
+
+  /* Accent (use a deeper teal) */
+  --accent: #174D38; /* Deep teal for accents */
+  --accent-foreground: #FFFFFF;
+
+  /* Destructive */
+  --destructive: #EF4444; /* Red for destructive actions */
+  --destructive-foreground: #FFFFFF;
+
+  /* Borders / Inputs / Rings */
+  --border: #E5E7EB; /* Light gray border */
+  --input: #FFFFFF; /* White inputs */
+  --ring: #14B8A6; /* Teal focus ring */
+
+  /* Charts (all complementary) */
+  --chart-1: #14B8A6; /* Teal */
+  --chart-2: #3B82F6; /* Blue */
+  --chart-3: #8B5CF6; /* Purple */
+  --chart-4: #F59E0B; /* Orange */
+  --chart-5: #EF4444; /* Red */
+
+  /* Border Radius */
+  --radius: 0.5rem;
+
+  /* Sidebar */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-primary: #14B8A6; /* Teal */
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F2F2F2; /* Light gray */
+  --sidebar-accent-foreground: #1A1A1A;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #14B8A6; /* Teal */
+}
+
+
+.dark {
+  /* Dark mode using the same palette with adjusted contrast */
+  --background: #0f172a; /* Dark background */
+  --foreground: #f8fafc; /* Light text */
+  --card: #1e293b; /* Dark cards */
+  --card-foreground: #f8fafc; /* Light text */
+  --popover: #1e293b; /* Dark popover */
+  --popover-foreground: #f8fafc; /* Light text */
+  --primary: #10b981; /* Same green primary */
+  --primary-foreground: #ffffff; /* White text on primary */
+  --secondary: #334155; /* Dark gray secondary */
+  --secondary-foreground: #f8fafc; /* Light text */
+  --muted: #1e293b; /* Dark muted */
+  --muted-foreground: #94a3b8; /* Medium gray text */
+  --accent: #10b981; /* Same green accent */
+  --accent-foreground: #ffffff; /* White text */
+  --destructive: #ef4444; /* Red destructive */
+  --destructive-foreground: #ffffff; /* White text */
+  --border: #334155; /* Dark border */
+  --input: #1e293b; /* Dark input */
+  --ring: #10b981; /* Green focus ring */
+  --chart-1: #10b981; /* Green */
+  --chart-2: #3b82f6; /* Blue */
+  --chart-3: #8b5cf6; /* Purple */
+  --chart-4: #f59e0b; /* Orange */
+  --chart-5: #ef4444; /* Red */
+  --sidebar: #1e293b; /* Dark sidebar */
+  --sidebar-foreground: #f8fafc; /* Light text */
+  --sidebar-primary: #10b981; /* Green */
+  --sidebar-primary-foreground: #ffffff; /* White text */
+  --sidebar-accent: #334155; /* Dark gray */
+  --sidebar-accent-foreground: #f8fafc; /* Light text */
+  --sidebar-border: #334155; /* Dark border */
+  --sidebar-ring: #10b981; /* Green */
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Prevent horizontal scrolling on mobile */
+    overflow-x: hidden;
+  }
+
+  /* Ensure fixed header works properly on mobile */
+  @supports (-webkit-touch-callout: none) {
+    .fixed {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+
+  /* Added custom typography styles for elegant event management aesthetic */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Enhanced animations for smooth interactions and scroll reveals - removed icon animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(23, 77, 56, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(23, 77, 56, 0);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--secondary);
+  }
+}
+
+@keyframes particles {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes gradient-wave {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(23, 77, 56, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(23, 77, 56, 0.6);
+  }
+}
+
+/* Hanging Photo Sway Animations */
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(2deg) translateX(0px);
+  }
+  25% {
+    transform: rotate(1deg) translateX(2px);
+  }
+  50% {
+    transform: rotate(2.5deg) translateX(0px);
+  }
+  75% {
+    transform: rotate(1.5deg) translateX(-1px);
+  }
+}
+
+@keyframes gentleSway {
+  0%, 100% {
+    transform: rotate(-3deg) translateX(0px);
+  }
+  25% {
+    transform: rotate(-2deg) translateX(-2px);
+  }
+  50% {
+    transform: rotate(-3.5deg) translateX(0px);
+  }
+  75% {
+    transform: rotate(-2.5deg) translateX(1px);
+  }
+}
+
+@keyframes slowSway {
+  0%, 100% {
+    transform: rotate(1deg) translateX(0px) translateY(0px);
+  }
+  30% {
+    transform: rotate(0.5deg) translateX(1px) translateY(-1px);
+  }
+  60% {
+    transform: rotate(1.5deg) translateX(-1px) translateY(1px);
+  }
+}
+
+@keyframes subtleSway {
+  0%, 100% {
+    transform: rotate(-2deg) translateX(0px) translateY(0px);
+  }
+  35% {
+    transform: rotate(-1.5deg) translateX(-1px) translateY(-1px);
+  }
+  65% {
+    transform: rotate(-2.5deg) translateX(1px) translateY(1px);
+  }
+}
+@keyframes slow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slow-spin 2.5s linear infinite; /* Adjust duration here */
+}
+
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid var(--secondary);
+  white-space: nowrap;
+  animation: typewriter 3s steps(40, end), blink 0.75s step-end infinite;
+}
+
+.particles-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--secondary);
+  border-radius: 50%;
+  animation: particles 15s linear infinite;
+}
+
+.gradient-wave {
+  background: linear-gradient(-45deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+  background-size: 400% 400%;
+  animation: gradient-wave 15s ease infinite;
+}
+
+.glow-effect {
+  animation: glow-pulse 2s ease-in-out infinite alternate;
+}
+
+/* Enhanced hover effects and transitions */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling with primary color */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+  opacity: 0.8;
+}
+
+/* Enhanced focus states for accessibility */
+.focus-visible:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Improved button animations with new purple color */
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-animate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-animate:hover::before {
+  left: 100%;
+}
+
+.btn-sweep {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-sweep::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.btn-sweep:hover::before {
+  left: 100%;
+}
+
+/* Glassmorphism effects for modals */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-morphism {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
