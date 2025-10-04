@@ -30,7 +30,7 @@ export function SignatureEventsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal direction="up" className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Signature Events
+            Our Finest Works
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             Explore our recent masterpieces that showcase our commitment to

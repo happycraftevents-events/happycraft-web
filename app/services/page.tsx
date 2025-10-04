@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "We craft experiences that exceed expectations—blending creativity, precision, and seamless execution. From grand gatherings to intimate moments, every event is designed to captivate, connect, and leave a lasting impression.",
   openGraph: {
-    title: "Services - HappyCraft Events",
+    title: "Services - HappyCraft Event LLP",
     description:
       "We craft experiences that exceed expectations—blending creativity, precision, and seamless execution. From grand gatherings to intimate moments, every event is designed to captivate, connect, and leave a lasting impression.",
-    images: ["https://happycraftevents.com/og-graph/services.jpg"],
+    images: ["https://happycraftevent.in/og-graph/services.jpg"],
   },
 };
 

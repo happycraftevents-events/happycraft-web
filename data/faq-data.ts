@@ -17,7 +17,7 @@ export const faqs: FAQ[] = [
   {
     question: "Do you provide services outside of Kolkata?",
     answer:
-      "Yes! We deliver exceptional events across 10+ cities in India including Mumbai, Bengaluru, New Delhi, Chennai, Hyderabad, and more. We have local partnerships to ensure seamless execution anywhere in India.",
+      "Yes! We deliver exceptional events across 12+ cities in India including Mumbai, Bengaluru, New Delhi, Chennai, Hyderabad, and more. We have local partnerships to ensure seamless execution anywhere in India.",
   },
   {
     question: "What is included in your event management services?",

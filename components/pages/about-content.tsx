@@ -25,7 +25,7 @@ export function AboutContent() {
                 Crafting Extraordinary Experiences Since 2015
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground text-pretty mb-0">
-                HappyCraft Events has been at the forefront of event management
+                HappyCraft Event LLP has been at the forefront of event management
                 in India, transforming visions into unforgettable experiences
                 with creativity, precision, and passion.
               </p>
@@ -78,7 +78,7 @@ export function AboutContent() {
                 <div className="w-full lg:w-[90%] relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src={aboutData.founder.image}
-                    alt={`${aboutData.founder.name}, Founder of HappyCraft Event`}
+                    alt={`${aboutData.founder.name}, Founder of HappyCraft Event LLP`}
                     className="object-cover"
                     draggable={false}
                     fill

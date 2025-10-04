@@ -90,4 +90,8 @@ export const servicesCities = [
   "Hyderabad",
   "Pune",
   "Jaipur",
+  "Patna",
+  "Jamshedpur",
+  "Lucknow",
+  "Ranchi",
 ];
