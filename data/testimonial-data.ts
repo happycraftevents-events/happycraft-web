@@ -8,14 +8,14 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Rajesh Kumar",
+    name: "Aryan Singhania",
     content:
       "HappyCraft Event LLP transformed our annual conference into an unforgettable experience. Their attention to detail and professional execution exceeded our expectations.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Priya Sharma",
+    name: "Shaurya Sharma",
     content:
       "The team at HappyCraft Event LLP delivered a flawless product launch event. Every aspect was perfectly coordinated, from venue setup to guest management.",
     rating: 4,
@@ -29,7 +29,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: 4,
-    name: "Sneha Reddy",
+    name: "Sneha Mehta",
     content: "Loved the decorations and overall vibe. Simple yet classy!",
     rating: 4,
   },
@@ -49,7 +49,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: 7,
-    name: "Rohit Mehta",
+    name: "Arjun Oberoi",
     content:
       "They handled everything so well, I didn’t have to worry about a single detail. Highly recommend their services!",
     rating: 5,
