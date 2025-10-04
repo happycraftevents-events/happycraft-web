@@ -49,14 +49,14 @@ export function HeroSection() {
                   <span
                     className={`transition-colors duration-1000 ease-in-out ${COLOR_CLASSES[colorIndex]}`}
                   >
-                    HappyCraft Events
+                    HappyCraft Event LLP
                   </span>{" "}
                   Creating Iconic Brand, Celebrity & Luxury Experiences
                 </h1>
                 <p className="text-base md:text-lg text-muted-foreground text-pretty mb-8 max-w-md mx-auto">
                   From high-profile brand launches and celebrity-studded galas
                   to immersive exhibitions and bespoke stall setups in luxury
-                  hotels, HappyCraft Events delivers world-class event
+                  hotels, HappyCraft Event LLP delivers world-class event
                   experiences.
                 </p>
               </div>
@@ -192,14 +192,14 @@ export function HeroSection() {
                   <span
                     className={`transition-colors duration-1000 ease-in-out ${COLOR_CLASSES[colorIndex]}`}
                   >
-                    HappyCraft Events
+                    HappyCraft Event LLP
                   </span>{" "}
                   Creating Iconic Brand, Celebrity & Luxury Experiences
                 </h1>
                 <p className="text-lg xl:text-xl text-muted-foreground text-pretty mb-8">
                   From high-profile brand launches and celebrity-studded galas
                   to immersive exhibitions and bespoke stall setups in luxury
-                  hotels, HappyCraft Events delivers exceptional event
+                  hotels, HappyCraft Event LLP delivers exceptional event
                   experiences across India. We blend creativity, precision, and
                   hospitality excellence to make every occasion unforgettable.
                 </p>

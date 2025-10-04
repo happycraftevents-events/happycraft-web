@@ -180,7 +180,7 @@ export function ContactContent() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="HappyCraft Events Office Location"
+                title="HappyCraft Event LLP Office Location"
               />
             </div>
           </div>

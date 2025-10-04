@@ -15,12 +15,12 @@ export function ServiceLocationsSection() {
               Exceptional Events Across India
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Delivered exceptional events across 10+ major cities — spanning
+              Delivered exceptional events across 12+ major cities — spanning
               North, South, East, West, and Central India. Our pan-India
               presence ensures consistent quality, seamless execution, and deep
               local expertise—wherever your event takes place.
             </p>
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-3 gap-4 text-sm">
               {servicesCities.map((city, index) => (
                 <ScrollReveal key={city} direction="up" delay={index * 100}>
                   <div className="flex items-center">

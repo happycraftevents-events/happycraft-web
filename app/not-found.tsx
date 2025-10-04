@@ -4,9 +4,9 @@ import { Home, ArrowLeft, Search } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | HappyCraft Events",
+  title: "Page Not Found | HappyCraft Event LLP",
   description:
-    "Oops! The page you are looking for does not exist. Explore our events, celebrity gatherings, and award-winning experiences at HappyCraft Events.",
+    "Oops! The page you are looking for does not exist. Explore our events, celebrity gatherings, and award-winning experiences at HappyCraft Event LLP.",
 };
 
 export default function NotFound() {

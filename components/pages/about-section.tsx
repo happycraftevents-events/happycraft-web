@@ -18,7 +18,7 @@ export function AboutSection() {
               <div>
                 <h3 className="font-semibold mb-2">Experience and Expertise</h3>
                 <p className="text-muted-foreground">
-                  HappyCraft Events combines experience with unmatched expertise
+                  HappyCraft Event LLP combines experience with unmatched expertise
                   to deliver extraordinary, impactful events.
                 </p>
               </div>

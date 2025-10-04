@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Gallery",
   description: "Explore our portfolio of extraordinary events and celebrations. Each image tells a story of creativity, precision, and unforgettable experiences crafted with passion.",
   openGraph: {
-    title: "Gallery - HappyCraft Events",
+    title: "Gallery - HappyCraft Event LLP",
     description: "Explore our portfolio of extraordinary events and celebrations. Each image tells a story of creativity, precision, and unforgettable experiences crafted with passion.",
-    images: ["https://happycraftevents.com/og-graph/gallery.jpg"],
+    images: ["https://happycraftevent.in/og-graph/gallery.jpg"],
   },
 }
 
