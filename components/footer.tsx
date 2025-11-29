@@ -206,7 +206,9 @@ export function Footer() {
                   href="/"
                   className="text-white/80 hover:text-primary transition-colors block"
                 >
-                  <div className="font-medium text-sm">HappyCraft Event LLP</div>
+                  <div className="font-medium text-sm">
+                    HappyCraft Event LLP
+                  </div>
                   <div className="text-xs text-white/60 mt-1">
                     Event Management
                   </div>
@@ -260,9 +262,10 @@ export function Footer() {
 
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <p className="text-white/80 text-sm">
-            © {new Date().getFullYear()} HappyCraft Event LLP. All rights reserved.
+            © {new Date().getFullYear()} HappyCraft Event LLP. All rights
+            reserved.
           </p>
-          <div className="flex space-x-4 mt-4 md:mt-0 lg:mr-12 mr-0">
+          {/* <div className="flex space-x-4 mt-4 md:mt-0 lg:mr-12 mr-0">
             <div className="flex space-x-6 font-sans text-sm opacity-90">
               <span className="hover:opacity-100 cursor-auto transition-opacity">
                 Designed & Crafted By{" "}
@@ -276,7 +279,7 @@ export function Footer() {
                 </Link>
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
